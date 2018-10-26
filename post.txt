@@ -1,0 +1,22 @@
+
+  <form action="{{ route('posts.store') }}" method="post" enctype="multipart/form-data">
+  {{ csrf_field() }}
+  <div class="form-group">
+  	<label for="content"></label>
+  	{{-- <textarea name="content" placeholder="Wanna Say Something!" class="form-control" rows="9" width="700px"></textarea> --}}
+
+    <textarea name="content" placeholder="Wanna Say Something!" class="form-control" rows="8" width="700px" style="margin: 0px -101.75px 0px 0px; width: 912px; height: 209px;"></textarea>
+    <input type="file" class="custom-file-input" name="image">
+
+    {{-- For Image --}}
+    {{-- <form id="form1" runat="server">
+    <input type='file' class="custom-file-input" name="image"  id="imgInp" />
+    <img id="blah" src="#" alt="your image" />
+    </form> --}}
+
+  </div>
+	{{-- <button class="btn btn-primary btn-lg pull-right"> POST</button> --}}
+    <input class="form-control pull-right"  type="submit" value="POST">
+    <br>  	
+  </form>	
+  {{-- <p><a class="btn btn-primary btn-lg" href="#" role="button">CREATE POST</a></p> --}}
